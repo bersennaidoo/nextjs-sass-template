@@ -8,18 +8,9 @@ const SideNav: FC<TSideNavProps> = (props: TSideNavProps) => {
   const {} = props;
 
   return (
-    <div id="" className="container d-flex" data-cy="">
-      <div id="" className="" data-cy="">
+    <div className="container mt-3">
         <NavLink />
-        <div id="" className="container" data-cy=""></div>
-        <form>
-          <button id="" className="d-flex btn btn-primary btn-md" data-cy="">
-            <div id="" className="container" data-cy="">
-              Sign Out
-            </div>
-          </button>
-        </form>
-      </div>
+        <button type="button" className="btn btn-primary btn-lg mt-3 mb-3">Sign Out</button>
     </div>
   );
 };
