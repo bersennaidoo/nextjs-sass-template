@@ -26,8 +26,8 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/dashboard">
-                Dashboard
+              <a className="nav-link" href="/add-product">
+                Shop
               </a>
             </li>
             <li className="nav-item dropdown">

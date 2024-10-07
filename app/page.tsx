@@ -3,8 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="container mt-3">
-      <h2>Dashboard</h2>
-      <Image className="img-fluild"  src="/images/portfolio/portfolio-1/pf2.jpg" width={800} height={600} alt="Feature" />
+      <Image className="img-fluild d-hidden d-block-md"  src="/images/hero-desktop.png" width={1000} height={760} alt="Feature" />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam
         corrupti dolores possimus fugiat voluptatibus fugit eius placeat eveniet
