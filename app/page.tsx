@@ -1,10 +1,17 @@
 import Image from "next/image";
+import styles from "./page.module.scss";
 
 export default function Home() {
   return (
-    <div className="container mt-3">
-      <Image className="img-fluild d-hidden d-block-md"  src="/images/hero-desktop.png" width={1000} height={760} alt="Feature" />
-      <p>
+    <div className="home">
+      <Image
+        className="home__hero"
+        src="/images/hero-desktop.png"
+        width={1000}
+        height={760}
+        alt="Feature"
+      />
+      <p className="home__intro">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam
         corrupti dolores possimus fugiat voluptatibus fugit eius placeat eveniet
         sequi non perspiciatis rerum, dolorem dolorum ab qui cum illum. Nam.
@@ -16,9 +23,16 @@ export default function Home() {
         sint error, at fugit perspiciatis dolores sit accusamus totam nesciunt!
         Magnam, impedit.
       </p>
-      <button type="button" className="btn btn-primary btn-lg">
-        <a href="/dashboard">Check Out The Dashboard Now!</a>
-      </button>
+      <div className="home__button__container">
+        <button
+          type="button"
+          className="btn btn-primary btn-lg home__cta__button"
+        >
+          <a className="home__link" href="/product-catalog">
+            Check Out The Products Now!
+          </a>
+        </button>
+      </div>
     </div>
   );
 }
