@@ -6,7 +6,7 @@ export default function Home() {
     <div className="home container" data-cy="home-container">
       <Image
         className="home__hero img-fluid"
-        src="/images/hero-desktop.png"
+        src="/images/2.jpg"
         width={1000}
         height={760}
         alt="Feature"
