@@ -3,9 +3,9 @@ import styles from "./page.module.scss";
 
 export default function Home() {
   return (
-    <div className="home">
+    <div className="home container" data-cy="home-container">
       <Image
-        className="home__hero"
+        className="home__hero img-fluid"
         src="/images/hero-desktop.png"
         width={1000}
         height={760}
@@ -23,16 +23,14 @@ export default function Home() {
         sint error, at fugit perspiciatis dolores sit accusamus totam nesciunt!
         Magnam, impedit.
       </p>
-      <div className="home__button__container">
-        <button
-          type="button"
-          className="btn btn-primary btn-lg home__cta__button"
-        >
-          <a className="home__link" href="/product-catalog">
-            Check Out The Products Now!
-          </a>
-        </button>
-      </div>
+      <button
+        type="button"
+        className="btn btn-primary btn-lg"
+      >
+        <a className="text-white home__link" href="/product-catalog">
+          Check Out The Products Now!
+        </a>
+      </button>
     </div>
   );
 }

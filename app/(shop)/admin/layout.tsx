@@ -1,19 +1,19 @@
-import ProductCatalogNav from "@/app/components/Shop/ProductCatalogNav/ProductCatalogNav"
+import AdminNav from "@/app/components/Shop/AdminNav/AdminNav";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Shop Product Catalog",
-    description: "Shop product catalog",
+    title: "Shop Administration",
+    description: "CRUD for shop inventory",
   };
   
-  export default function ProductCatalogLayout({
+  export default function AdminLayout({
     children,
   }: Readonly<{
     children: React.ReactNode;
   }>) {
     return (
         <div className="admin-root">
-          <header><ProductCatalogNav /></header>
+          <header className="container admin-root__header"><AdminNav /></header>
           <main id="admin-main-section" className="container admin-main-container">{children}</main>
         </div>
     );

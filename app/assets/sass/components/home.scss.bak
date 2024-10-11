@@ -21,6 +21,6 @@
         color: white;
     }
     &__button__container {
-        padding-inline-start: 22rem;
+        padding-inline-start: 100px;
     }
 }

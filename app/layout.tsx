@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./assets/sass/globals.scss";
-import { inter } from "@/app/components/Fonts/Fonts"
+import { inter } from "@/app/components/Fonts/Fonts";
 import BootstrapClientJS from "./components/BootstrapClientJS/BootstrapClientJS";
 import Header from "@/app/components/Header/Header";
+import Footer from "@/app/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "XYZ Company",
@@ -17,9 +18,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased body`}>
-        <header><Header /></header>
-        <main id="main-section" className="container main-container">{children}</main>
-        <footer className="">Footer</footer>
+        <header>
+          <Header />
+        </header>
+        <main id="main-section" className="container main-container">
+          {children}
+        </main>
+        <footer className="">
+          <Footer />
+        </footer>
         <BootstrapClientJS />
       </body>
     </html>

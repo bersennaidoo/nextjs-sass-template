@@ -4,26 +4,17 @@ import React, { FC } from "react";
 
 const ProductCatalogNav: FC = () => {
   return (
-    <div className="admin-nav-container">
-      <nav className="admin-nav-container__nav">
-        <ul className="admin-nav-container__navlist">
-          <li className="admin-nav-container__navlist__item">
-            <a
-              className="admin-nav-container__navlist__link"
-              href="/product-catalog/product-list"
-            >
-              Product List
-            </a>
-          </li>
-          <li className="admin-nav-container__navlist__item">
-            <a
-              className="admin-nav-container__navlist__link"
-              href="/product-catalog/product-detail"
-            >
-              Product Detail
-            </a>
-          </li>
-        </ul>
+    <div className="admin-nav">
+      <nav className="nav flex-column">
+        <a className="nav-link active" aria-current="page" href="/product-catalog">
+          Overview
+        </a>
+        <a className="nav-link" href="/product-catalog/product-list">
+          Product List
+        </a>
+        <a className="nav-link" href="/product-catalog/product-detail">
+          Product Detail
+        </a>
       </nav>
     </div>
   );
