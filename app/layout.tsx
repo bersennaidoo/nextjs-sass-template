@@ -18,15 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased body`}>
-        <header>
           <Header />
-        </header>
-        <main id="main-section" className="container main-container">
           {children}
-        </main>
-        <footer className="">
           <Footer />
-        </footer>
         <BootstrapClientJS />
       </body>
     </html>
