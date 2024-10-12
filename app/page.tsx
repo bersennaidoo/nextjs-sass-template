@@ -3,18 +3,27 @@ import styles from "./page.module.scss";
 
 export default function Home() {
   return (
-    <main id="home-main" className="home-main" data-cy="home-main">
-      <section id="home-main-section" className="container home-main-container" data-cy="home-main-section">
-        <header id="home-header" className="home-main-container__header" data-cy="home-header">
-            <Image
-              className="home-main-container__hero img-fluid"
-              src="/images/2.jpg"
-              width={700}
-              height={500}
-              alt="Feature"
-            />
+    <main id="home-main" className="container home-main" data-cy="home-main">
+      <h1>XYZ Corporation</h1>
+      <section
+        id="home-main-section"
+        className="row home-main-container"
+        data-cy="home-main-section"
+      >
+        <header
+          id="home-header"
+          className="col-sm-12 col-md-6 home-main-container__header"
+          data-cy="home-header"
+        >
+          <Image
+            className="home-main-container__hero img-fluid"
+            src="/images/2.jpg"
+            width={700}
+            height={500}
+            alt="Feature"
+          />
         </header>
-        <main>
+        <main className="col-sm-12 col-md-6">
           <p className="home__intro">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam
             corrupti dolores possimus fugiat voluptatibus fugit eius placeat
@@ -27,7 +36,10 @@ export default function Home() {
             laboriosam voluptatum sint error, at fugit perspiciatis dolores sit
             accusamus totam nesciunt! Magnam, impedit.
           </p>
-          <button type="button" className="btn btn-primary btn-lg animate animated_bounce home-main-container__cta__button">
+          <button
+            type="button"
+            className="btn btn-primary btn-lg animate animated_bounce home-main-container__cta__button"
+          >
             <a className="text-white home__link" href="/products">
               Check Out The Products Now!
             </a>
