@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Dialog from "@/app/components/Dialog/Dialog"
 import styles from "./page.module.scss";
 
 export default function Home() {
@@ -24,7 +25,7 @@ export default function Home() {
           />
         </header>
         <main className="col-sm-12 col-md-6">
-          <p className="home__intro">
+          <p className="home-main-container__intro">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam
             corrupti dolores possimus fugiat voluptatibus fugit eius placeat
             eveniet sequi non perspiciatis rerum, dolorem dolorum ab qui cum
@@ -46,6 +47,7 @@ export default function Home() {
           </button>
         </main>
       </section>
+      <Dialog />
     </main>
   );
 }

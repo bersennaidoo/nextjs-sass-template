@@ -1,6 +1,27 @@
 "use client";
+import React, {useEffect, useState } from "react"
+import $ from "jquery"
+import * as bootstrap from "bootstrap"
 
 const Header = () => {
+
+  const [state, setState] = useState<boolean>(false)
+
+  useEffect(() => {
+    $("#navbarDropdown").on("click", function() {
+      var d = $("#navbarDropdown")
+      var dc = new bootstrap.Dropdown(d as any)
+      dc.toggle()
+    })
+    $("#buttonHamburger").on("click", function() {
+      var ns = $("#navbarSupportedContent")
+      var c = new bootstrap.Collapse(ns as any)
+      c.toggle()
+    })
+    setState((prev) => {
+      return !prev
+    })
+  }, [])
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
@@ -11,8 +32,7 @@ const Header = () => {
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
+            id="buttonHamburger"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -32,7 +52,6 @@ const Header = () => {
                   href="#"
                   id="navbarDropdown"
                   role="button"
-                  data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Shop

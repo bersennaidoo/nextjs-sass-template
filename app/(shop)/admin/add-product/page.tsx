@@ -1,8 +1,11 @@
+import CModal from "@/app/components/bs5/CModal/CModal"
 export const metadata = {
   title: "Add Product - XYZ Admin"
 }
 const AddProductPage = () => {
   return (
+    <>
+    <CModal />
     <main>
       <section id="add-product" className="container add-product-container" data-cy="add-product">
         <div className="row">
@@ -59,6 +62,7 @@ const AddProductPage = () => {
         </div>
       </section>
     </main>
+    </>
   );
 };
 export default AddProductPage;
