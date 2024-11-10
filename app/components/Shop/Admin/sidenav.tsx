@@ -5,9 +5,6 @@ import NavLinks from "@/app/components/Shop/Admin/nav-links"
 import { FaAmazon } from "react-icons/fa"
 
 import React, { useEffect, useState, FC } from "react"
-import $ from "jquery"
-import bootstrap from "bootstrap"
-import "jquery-ui-dist/jquery-ui"
 
 type TSideNavProps = {}
 

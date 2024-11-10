@@ -1,6 +1,7 @@
 "use client";
 import React, {useEffect, useState } from "react"
 import { FaHome } from "react-icons/fa"
+import Link from "next/link"
 import $ from "jquery"
 import * as bootstrap from "bootstrap"
 

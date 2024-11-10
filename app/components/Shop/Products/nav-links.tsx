@@ -5,10 +5,6 @@ import { usePathname } from "next/navigation"
 import { FaAmazon, FaPlusCircle } from "react-icons/fa"
 import Link from "next/link"
 
-import $ from "jquery"
-import bootstrap from "bootstrap"
-import "jquery-ui-dist/jquery-ui"
-
 type TNavLinksProps = {}
 
 const links = [

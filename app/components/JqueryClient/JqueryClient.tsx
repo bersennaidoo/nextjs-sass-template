@@ -3,9 +3,11 @@ import { useEffect } from "react";
 
 const JqueryClient = () => {
 
-    return (
-        <script defer src="../../../node_modules/jquery/dist/jquery.js" />
-    )
+    useEffect(() => {
+        require("jquery/dist/jquery.min.js");
+      }, []);
+    
+      return null
 };
 
 export default JqueryClient
