@@ -12,7 +12,7 @@ const UpdateProductPage: FC<TUpdateProductPageProps> = (
   const { params } = props;
   const id = params.id;
   return (
-    <main>
+    <main className="col-sm-12 col-md-8">
       <section id="update-product" className="container update-product-container" data-cy="update-product">
         <header>
           <h2>Update Product Page {id} </h2>

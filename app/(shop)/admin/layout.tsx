@@ -1,4 +1,4 @@
-import AdminNav from "@/app/components/Shop/AdminNav/AdminNav";
+import SideNav from "@/app/components/Shop/Admin/sidenav"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,9 +12,9 @@ export default function AdminLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
-      <AdminNav />
+    <div className="row">
+      <SideNav />
       {children}
-    </>
+    </div>
   );
 }

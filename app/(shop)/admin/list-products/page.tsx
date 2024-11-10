@@ -1,6 +1,6 @@
 const ListProductsPage = () => {
     return (
-      <main>
+      <main className="col-sm-12 col-md-8">
         <section id="list-products" className="container list-products-container" data-cy="list-products">
           <header>
             <h2>List Products Page</h2>

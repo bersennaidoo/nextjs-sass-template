@@ -1,5 +1,6 @@
 "use client";
 import React, {useEffect, useState } from "react"
+import { FaHome } from "react-icons/fa"
 import $ from "jquery"
 import * as bootstrap from "bootstrap"
 
@@ -9,14 +10,14 @@ const Header = () => {
 
   useEffect(() => {
     $("#navbarDropdown").on("click", function() {
-      var d = $("#navbarDropdown")
-      var dc = new bootstrap.Dropdown(d as any)
-      dc.toggle()
+      var navbarDropdown = $("#navbarDropdown")
+      var dropdown = new bootstrap.Dropdown(navbarDropdown as any)
+      dropdown.toggle()
     })
     $("#buttonHamburger").on("click", function() {
-      var ns = $("#navbarSupportedContent")
-      var c = new bootstrap.Collapse(ns as any)
-      c.toggle()
+      var navbarSupportedContent = $("#navbarSupportedContent")
+      var collapse = new bootstrap.Collapse(navbarSupportedContent as any)
+      collapse.toggle()
     })
     setState((prev) => {
       return !prev
@@ -24,10 +25,10 @@ const Header = () => {
   }, [])
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <nav className="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            OOO
+            <FaHome />
           </a>
           <button
             className="navbar-toggler"
@@ -76,9 +77,6 @@ const Header = () => {
                     </a>
                   </li>
                 </ul>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
               </li>
             </ul>
             <form className="d-flex">

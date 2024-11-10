@@ -4,9 +4,7 @@ export const metadata = {
 }
 const AddProductPage = () => {
   return (
-    <>
-    <CModal />
-    <main>
+    <main className="col-sm-12 col-md-8">
       <section id="add-product" className="container add-product-container" data-cy="add-product">
         <div className="row">
           <div className="col-sm-12">
@@ -62,7 +60,6 @@ const AddProductPage = () => {
         </div>
       </section>
     </main>
-    </>
   );
 };
 export default AddProductPage;

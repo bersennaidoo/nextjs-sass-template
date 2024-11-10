@@ -1,4 +1,4 @@
-import ProductsNav from "@/app/components/Shop/ProductsNav/ProductsNav";
+import SideNav from "@/app/components/Shop/Products/sidenav"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,9 +12,9 @@ export default function ProductsLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
-      <ProductsNav />
+    <div className="row">
+      <SideNav />
       {children}
-    </>
+    </div>
   );
 }

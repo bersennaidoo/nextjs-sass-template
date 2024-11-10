@@ -6,8 +6,8 @@ const JeasyuiCss = () => {
 
     return (
         <>
-        <link rel="stylesheet" href="/js/jqeasyui/jquery-easyui-1.11.0/themes/default/easyui.css" />
-        <link rel="stylesheet" href="/js/jqeasyui/jquery-easyui-1.11.0/themes/icon.css" />
+        <link rel="stylesheet" href="/js/jquery-easyui-1.11.0/themes/default/easyui.css" />
+        <link rel="stylesheet" href="/js/jquery-easyui-1.11.0/themes/icon.css" />
         </>
     )
 }

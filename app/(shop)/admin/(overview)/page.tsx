@@ -1,6 +1,6 @@
 const AdminOverviewPage = () => {
   return (
-    <main>
+    <main className="col-sm-12 col-md-8">
       <section id="admin-overview" className="container admin-overview-container" data-cy="admin-overview">
         <header>
           <h2>Admin Overview Page</h2>

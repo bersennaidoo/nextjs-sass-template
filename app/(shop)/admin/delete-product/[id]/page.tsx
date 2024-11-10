@@ -9,7 +9,7 @@ const DeleteProductPage: FC<TDeleteProductPageProps> = (props: TDeleteProductPag
   const { params } = props
   const id = params.id
     return (
-      <main>
+      <main className="col-sm-12 col-md-8">
         <section id="delete-product" className="container delete-product-container" data-cy="delete-product">
           <header>
             <h2>Delete Product Page {id}</h2>

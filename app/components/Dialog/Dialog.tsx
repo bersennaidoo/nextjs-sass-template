@@ -9,6 +9,7 @@ const Dialog = () => {
   const [state, setState] = useState<boolean>(false);
 
   useEffect(() => {
+   
     $("#colap").on("click", function () {
       var ce = $("#collapseExample");
       var c = new bootstrap.Collapse(ce as any);
