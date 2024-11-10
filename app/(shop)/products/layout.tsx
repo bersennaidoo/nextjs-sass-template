@@ -1,4 +1,3 @@
-import SideNav from "@/app/components/Shop/Products/sidenav"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,7 +12,6 @@ export default function ProductsLayout({
 }>) {
   return (
     <div className="row">
-      <SideNav />
       {children}
     </div>
   );
