@@ -1,4 +1,3 @@
-import CModal from "@/app/components/bs5/CModal/CModal"
 export const metadata = {
   title: "Add Product - XYZ Admin"
 }
