@@ -60,12 +60,12 @@ const Header = () => {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="/admin">
+                    <a className="dropdown-item" href="#">
                       Admin
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/products">
+                    <a className="dropdown-item" href="#">
                       Products
                     </a>
                   </li>

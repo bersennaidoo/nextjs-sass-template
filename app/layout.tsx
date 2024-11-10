@@ -4,9 +4,7 @@ import "./assets/sass/globals.scss";
 import "jquery-ui-dist/jquery-ui.min.css";
 import { inter } from "@/app/components/Fonts/Fonts";
 import BootstrapClientJS from "./components/BootstrapClientJS/BootstrapClientJS";
-//import Header from "@/app/components/Header/Header";
 import Footer from "@/app/components/Footer/Footer";
-import JqueryClient from "@/app/components/JqueryClient/JqueryClient";
 
 export const metadata: Metadata = {
   title: "XYZ Company",
