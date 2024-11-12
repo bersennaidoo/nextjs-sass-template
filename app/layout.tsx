@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic"
-import "./assets/sass/globals.scss";
+import dynamic from "next/dynamic";
+import "./assets/sass/local/main.scss";
 import "jquery-ui-dist/jquery-ui.min.css";
-import { inter } from "@/app/components/Fonts/Fonts";
+//import { inter } from "@/app/components/Fonts/Fonts";
 import BootstrapClientJS from "./components/BootstrapClientJS/BootstrapClientJS";
 import Footer from "@/app/components/Footer/Footer";
 
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const DynamicHeaderWithNoSSR = dynamic(
   () => import("@/app/components/Header/Header"),
   { ssr: false }
-)
+);
 
 export default function RootLayout({
   children,
@@ -23,13 +23,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-      </head>
-      <body className={`container-fluid ${inter.className} antialiased body`}>
-          <DynamicHeaderWithNoSSR />
+      <head></head>
+      <body>
+        <div className="m-container">
+            <DynamicHeaderWithNoSSR />
           {children}
-          <Footer />
-          <BootstrapClientJS />
+            <Footer />
+        </div>
+        <BootstrapClientJS />
       </body>
     </html>
   );

@@ -1,0 +1,32 @@
+$primary: #20c997;
+$darkest: shade-color(#20c997, 100%);
+$dark: shade-color(#20c997, 60%);
+$medium: tint-color(#20c997, 80%);
+$light: tint-color(#20c997, 89%); 
+$lightest: tint-color(#20c997, 95%);
+$white: tint-color(#20c997, 100%);
+
+$warning: yellow;
+$danger: red;
+$success: green;
+$info: blue;
+
+$bg-color: $medium;
+$color: $darkest;
+$font-size-base: 100%;
+$font-family: "Roboto", "san-serif";
+$line-height: 1.5;
+$spacer: 1rem;
+
+$h1-font-size: 2.027;
+$h2-font-size: 1.802;
+$h3-font-size: 1.602;
+$h4-font-size: 1.424;
+$h5-font-size: 1.266;
+$h6-font-size: 1.125;
+
+$breakpoint-min-width-sm: 576px;
+$breakpoint-min-width-md: 768px;
+$breakpoint-min-width-lg: 992px;
+$breakpoint-min-width-xl: 1200px;
+$breakpoint-min-width-xxl: 1400px;

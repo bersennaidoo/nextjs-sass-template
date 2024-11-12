@@ -1,0 +1,11 @@
+body {
+  margin: unset;
+  background-color: $bg-color;
+  color: $color;
+  font-size: $font-size-base;
+  font-family: $font-family;
+}
+
+.v-spacer > * + * {
+  margin-block-start: 1.5rem;
+}

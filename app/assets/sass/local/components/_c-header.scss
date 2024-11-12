@@ -1,0 +1,64 @@
+.c-header {
+  grid-column: header;
+  padding: $spacer;
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    background-color: $light;
+  }
+  &__logo-frame {
+    flex: 18%;
+    text-align: center;
+  }
+  &__list {
+    flex: 58%;
+    display: flex;
+    flex-direction: column;
+    gap: $spacer * 0.5;
+    list-style-type: none;
+    padding: $spacer * 0.5;
+  }
+  &__form {
+    flex: 20%;
+    padding-inline-start: $spacer * 0.5;
+    padding-block-end: $spacer;
+  }
+  &__input {
+    width: 80%;
+    padding: 0.5rem 0.5rem;
+    background-clip: padding-box;
+    border: 0.008px solid;
+    border-radius: 20px;
+    appearance: none;
+    margin-inline-end: 0.5rem;
+  }
+  &__item {
+  }
+  &__link {
+    text-decoration: none;
+    display: block;
+    padding-inline: $spacer;
+    padding-block: $spacer * 0.5;
+    background-color: $primary;
+    color: $white;
+  }
+  &--right {
+    margin-inline-start: auto;
+  }
+}
+
+@media (min-width: $breakpoint-min-width-md) {
+  .c-header {
+    &__nav {
+      flex-direction: row;
+      align-items: center;
+    }
+    &__list {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    &__form {
+        padding-block-end: 0;
+      }
+  }
+}

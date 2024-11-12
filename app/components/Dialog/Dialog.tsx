@@ -9,7 +9,6 @@ const Dialog = () => {
   const [state, setState] = useState<boolean>(false);
 
   useEffect(() => {
-   
     $("#colap").on("click", function () {
       var ce = $("#collapseExample");
       var c = new bootstrap.Collapse(ce as any);
@@ -56,6 +55,7 @@ const Dialog = () => {
           type="button"
           aria-expanded="false"
           aria-controls="collapseExample"
+          title="Button collapse"
         >
           Button with data-bs-target
         </button>
@@ -71,4 +71,4 @@ const Dialog = () => {
   );
 };
 
-export default Dialog;
+export default Dialog
