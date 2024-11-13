@@ -1,5 +1,5 @@
 .c-footer {
-    grid-column: footer;
-    max-inline-size: 100%;
+    grid-column: f;
+    margin-inline: $spacer * 0.5;
     background-color: green;
 }

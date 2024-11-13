@@ -1,14 +1,18 @@
 .c-header {
-  grid-column: header;
+  grid-column: h;
   padding: $spacer;
+  background-color: $lightest;
+  margin-inline: $spacer * 0.5;
   &__nav {
     display: flex;
     flex-direction: column;
-    background-color: $light;
   }
   &__logo-frame {
     flex: 18%;
     text-align: center;
+  }
+  &__logo {
+    max-inline-size: 100%;
   }
   &__list {
     flex: 58%;
@@ -27,12 +31,10 @@
     width: 80%;
     padding: 0.5rem 0.5rem;
     background-clip: padding-box;
-    border: 0.008px solid;
-    border-radius: 20px;
+    border: 0.009px solid darkgreen;
+    border-radius: 8px;
     appearance: none;
     margin-inline-end: 0.5rem;
-  }
-  &__item {
   }
   &__link {
     text-decoration: none;
@@ -41,9 +43,6 @@
     padding-block: $spacer * 0.5;
     background-color: $primary;
     color: $white;
-  }
-  &--right {
-    margin-inline-start: auto;
   }
 }
 

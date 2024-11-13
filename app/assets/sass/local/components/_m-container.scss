@@ -2,11 +2,11 @@
     display: grid;
     max-inline-size: 100%;
     margin-inline: auto;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap: $spacer * 0.25;
-    grid-template-areas: "header header header"
-                         "main main main"
-                         "footer footer footer";
+    grid-template-areas: "h h h h h h h h h h h h"
+                         "m m m m m m m m m m m m"
+                         "f f f f f f f f f f f f";
 }
 
 @media (min-width: $breakpoint-min-width-md) {

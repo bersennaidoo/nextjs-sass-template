@@ -28,7 +28,7 @@ const Header = () => {
     <header className="c-header">
       <nav className="c-header__nav">
         <h1 className="c-header__logo-frame">
-          <img className="c-header__logo" src="/images/100x100.png" />
+          <img className="c-header__logo" src="/images/185x104.png" />
         </h1>
         <ul className="c-header__list">
           <li className="c-header__item"><a className="c-header__link" href="/">Home</a></li>

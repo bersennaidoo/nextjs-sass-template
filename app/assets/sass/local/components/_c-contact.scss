@@ -1,0 +1,25 @@
+.c-contact {
+    grid-column: m;
+    margin-inline: $spacer * 0.5;
+    background-color: wheat;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+                    "s s s s s s s s s s s s"
+                    "m m m m m m m m m m m m";
+    &__aside {
+        grid-column: s;
+        background-color: saddlebrown;
+    }
+    &__main {
+        grid-column: m;
+        background-color: sandybrown;
+    }
+}
+
+@media (min-width: $breakpoint-min-width-md ) {
+    .c-contact {
+        grid-template-areas: 
+                      "s s s s m m m m m m m m";
+    }
+}

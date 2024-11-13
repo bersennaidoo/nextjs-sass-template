@@ -1,5 +1,60 @@
 .c-home {
-    grid-column: main;
-    max-inline-size: 100%;
-    background-color: blue;
+    grid-column: m;
+    margin-inline: $spacer * 0.5;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+                    "s s s s s s s s s s s s"
+                    "m m m m m m m m m m m m";
+    &__aside {
+        grid-column: s;
+        display: flex;
+        flex-direction: column;
+        background-color: $lightest;
+    }
+    &__specials-frame {
+        flex: 1 1 100%;
+    }
+    &__specials {
+        max-inline-size: 100%;
+    }
+    &__main {
+        grid-column: m;
+        background-color: $lightest;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $spacer * 0.8;
+        padding: $spacer;
+    }
+    &__card {
+        flex: 1 1 30%;
+        border: 1px solid $dark;
+    }
+    &__card-img {
+        max-inline-size: 100%;
+        padding: $spacer * 0.5;
+    }
+    &__card-header {
+        text-align: center;
+    }
+    &__card-body {
+        padding-inline: $spacer;
+        padding-block-end: $spacer;
+    }
+}
+
+@media (min-width: $breakpoint-min-width-md ) {
+    .c-home {
+        grid-template-areas: 
+                      "s s s s m m m m m m m m";
+        &__main {
+            flex-direction: row;
+            margin-inline-start: $spacer * 0.5;
+        }
+        &__aside {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
 }

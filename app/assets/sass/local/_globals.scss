@@ -7,5 +7,5 @@ body {
 }
 
 .v-spacer > * + * {
-  margin-block-start: 1.5rem;
+  margin-block-start: $spacer;
 }
