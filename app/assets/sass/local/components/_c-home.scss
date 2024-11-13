@@ -23,12 +23,14 @@
         background-color: $lightest;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: $spacer * 0.8;
+        gap: $spacer * 0.9;
         padding: $spacer;
+        margin: unset;
     }
     &__card {
-        flex: 1 1 30%;
+        flex: 1 1 25%;
         border: 1px solid $dark;
     }
     &__card-img {
