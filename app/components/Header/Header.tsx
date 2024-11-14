@@ -1,46 +1,87 @@
 "use client";
-import React, {useEffect, useState } from "react"
-import { FaSearch } from "react-icons/fa"
-import Link from "next/link"
-import $ from "jquery"
-import * as bootstrap from "bootstrap"
+import React, { useEffect, useState } from "react";
+import { FaSearch } from "react-icons/fa";
+import Link from "next/link";
+import { ButtonDropdown } from "@/app/js/button-dropdown";
+import $ from "jquery";
+import * as bootstrap from "bootstrap";
 
 const Header = () => {
-
-  const [state, setState] = useState<boolean>(false)
+  const [state, setState] = useState<boolean>(false);
 
   useEffect(() => {
-    $("#navbarDropdown").on("click", function() {
-      var navbarDropdown = $("#navbarDropdown")
-      var dropdown = new bootstrap.Dropdown(navbarDropdown as any)
-      dropdown.toggle()
-    })
-    $("#buttonHamburger").on("click", function() {
-      var navbarSupportedContent = $("#navbarSupportedContent")
-      var collapse = new bootstrap.Collapse(navbarSupportedContent as any)
-      collapse.toggle()
-    })
+    ButtonDropdown();
     setState((prev) => {
-      return !prev
-    })
-  }, [])
+      return !prev;
+    });
+  }, []);
   return (
-    <header className="c-header">
+    <div className="c-header">
+      <header className="c-header__logo-frame">
+        <a className="c-header__logo-link" href="/">
+          <img className="c-header__logo" src="/images/logo1.svg" />
+        </a>
+      </header>
       <nav className="c-header__nav">
-        <h1 className="c-header__logo-frame">
-          <img className="c-header__logo" src="/images/185x104.png" />
-        </h1>
-        <ul className="c-header__list">
-          <li className="c-header__item"><a className="c-header__link" href="/">Home</a></li>
-          <li className="c-header__item"><a className="c-header__link" href="/shop">Shop</a></li>
-          <li className="c-header__item"><a className="c-header__link" href="/about">About</a></li>
-          <li className="c-header__item"><a className="c-header__link c-header--right" href="/contact">Contact</a></li>
-        </ul>
-        <form className="c-header__form">
-          <input className="c-header__input" type="text" placeholder="search" /><FaSearch />
-        </form>
+        <button
+          type="button"
+          id="c-header-toggle"
+          className="c-header__btn-dropdown"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            className="bi"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fillRule="evenodd"
+              d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            ></path>
+          </svg>
+        </button>
+        <div className="c-header__list-frame">
+          <ul className="c-header__list">
+            <li className="c-header__list-item">
+              <a className="c-header__list-link" href="/">
+                Home
+              </a>
+            </li>
+            <li className="c-header__list-item">
+              <a className="c-header__list-link" href="/shop">
+                Shop
+              </a>
+            </li>
+            <li className="c-header__list-item">
+              <a className="c-header__list-link" href="/about">
+                About
+              </a>
+            </li>
+            <li className="c-header__list-item">
+              <a className="c-header__list-link" href="/contact">
+                Contact
+              </a>
+            </li>
+            <form className="c-header__search-form">
+              <input
+                className="c-header__form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button className="c-header__search-form-btn" type="submit">
+                Search
+              </button>
+            </form>
+          </ul>
+        </div>
       </nav>
-    </header>
+      <div className="c-header__hero-frame">
+        <img className="c-header__hero-img" src="/images/background.png" />
+      </div>
+    </div>
   );
 };
 

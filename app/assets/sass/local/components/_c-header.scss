@@ -1,42 +1,41 @@
 .c-header {
-  grid-column: h;
-  padding: $spacer;
-  background-color: $lightest;
   margin-inline: $spacer * 0.5;
-  &__nav {
-    display: flex;
-    flex-direction: column;
-  }
+  background-color: $lightest;
+  grid-column: h;
+  display: grid;
+  gap: $spacer * 0.5;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas:
+    "l l l l l l l l l l l l"
+    "n n n n n n n n n n n n"
+    "he he he he he he he he he he he he";
   &__logo-frame {
-    flex: 18%;
+    grid-column: l;
     text-align: center;
+    padding: $spacer;
   }
   &__logo {
     max-inline-size: 100%;
   }
+  &__logo-link {
+    display: block;
+    padding: $spacer * 1.5;
+  }
+  &__nav {
+    grid-column: n;
+  }
+  &__hero-frame {
+    grid-column: he;
+  }
   &__list {
-    flex: 58%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     gap: $spacer * 0.5;
     list-style-type: none;
     padding: $spacer * 0.5;
   }
-  &__form {
-    flex: 20%;
-    padding-inline-start: $spacer * 0.5;
-    padding-block-end: $spacer;
-  }
-  &__input {
-    width: 80%;
-    padding: 0.5rem 0.5rem;
-    background-clip: padding-box;
-    border: 0.009px solid darkgreen;
-    border-radius: 8px;
-    appearance: none;
-    margin-inline-end: 0.5rem;
-  }
-  &__link {
+  &__list-link {
     text-decoration: none;
     display: block;
     padding-inline: $spacer;
@@ -44,20 +43,43 @@
     background-color: $primary;
     color: $white;
   }
+  &__form-control {
+    padding: $spacer * 0.5;
+    margin-inline-end: $spacer;
+  }
+  &__search-form-btn {
+    padding: $spacer * 0.5;
+    background-color: $primary;
+    color: $white;
+  }
+  &__btn-dropdown {
+    background-color: $primary;
+    color: $white;
+  }
+  &__list-frame {
+    display: none;
+  }
+  &__hero-img {
+    max-inline-size: 100%;
+  }
 }
 
-@media (min-width: $breakpoint-min-width-md) {
-  .c-header {
-    &__nav {
-      flex-direction: row;
-      align-items: center;
+@media (min-width: $breakpoint-min-width-md ) {
+    .c-header {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+              "l l l l n n n n n n n n"
+              "he he he he he he he he he he he he";
+        &__btn-dropdown {
+            display: none;
+        }
+        &__list-frame {
+            display: block;
+            padding-block-start: $spacer * 1.5;
+        }
+        &__list {
+            flex-direction: row;
+            align-items: center;
+        }
     }
-    &__list {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-    &__form {
-        padding-block-end: 0;
-      }
-  }
 }
