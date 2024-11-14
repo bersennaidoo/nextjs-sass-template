@@ -38,13 +38,21 @@
         max-inline-size: 100%;
         padding: $spacer * 0.5;
     }
-    &__card-header {
-        padding-inline: $spacer;
-        padding-block-end: $spacer;
-    }
     &__card-body {
         padding-inline: $spacer;
         padding-block-end: $spacer;
+    }
+    &__card-btn {
+        display: inline-block;
+        padding: $spacer * 0.8;
+        margin-block-end: $spacer * 0.3;
+        border: 1px solid $primary;
+        border-radius: 6px;
+        color: $darkest;
+        text-decoration: none;
+    }
+    &__card-btn:hover {
+        background-color: $primary;
     }
 }
 

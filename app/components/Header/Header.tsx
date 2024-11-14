@@ -79,7 +79,7 @@ const Header = () => {
         </div>
       </nav>
       <div className="c-header__hero-frame">
-        <img className="c-header__hero-img" src="/images/background.png" />
+        <p className="c-header__hero-text">Laptops... Tech Gadgets for you...</p>
       </div>
     </div>
   );

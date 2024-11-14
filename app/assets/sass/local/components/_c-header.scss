@@ -59,8 +59,21 @@
   &__list-frame {
     display: none;
   }
-  &__hero-img {
+  &__hero-frame {
+    block-size: 25rem;
+    max-block-size: 25rem;
     max-inline-size: 100%;
+    background-color: $lightest;
+    background-image: url("/images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__hero-text {
+    color: $primary;
+    font-style: italic;
+    text-align: center;
+    font-size: $spacer * 3;
+    padding-block-start: $spacer * 7;
   }
 }
 

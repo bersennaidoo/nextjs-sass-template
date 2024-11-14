@@ -16,19 +16,43 @@ const CHome: FC<TCHomeProps> = (props: TCHomeProps) => {
       </aside>
       <main className="c-home__main">
         <div className="c-home__card">
-          <h1 className="c-home__card-header">Bananas</h1>
           <img className="c-home__card-img" src="/images/400x300.png" />
-          <p className="c-home__card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div className="c-home__card-body">
+            <h5 className="c-home__card-title">Card title</h5>
+            <p className="c-home__card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam modi
+              illum et.
+            </p>
+            <a href="#" className="c-home__card-btn">
+              Go somewhere
+            </a>
+          </div>
         </div>
         <div className="c-home__card">
-          <h1 className="c-home__card-header">Apples</h1>
           <img className="c-home__card-img" src="/images/400x300.png" />
-          <p className="c-home__card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div className="c-home__card-body">
+            <h5 className="c-home__card-title">Card title</h5>
+            <p className="c-home__card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam modi
+              illum et.
+            </p>
+            <a href="#" className="c-home__card-btn">
+              Go somewhere
+            </a>
+          </div>
         </div>
         <div className="c-home__card">
-          <h1 className="c-home__card-header">Oranges</h1>
           <img className="c-home__card-img" src="/images/400x300.png" />
-          <p className="c-home__card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div className="c-home__card-body">
+            <h5 className="c-home__card-title">Card title</h5>
+            <p className="c-home__card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam modi
+              illum et.
+            </p>
+            <a href="#" className="c-home__card-btn">
+              Go somewhere
+            </a>
+          </div>
         </div>
       </main>
     </div>
