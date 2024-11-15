@@ -1,5 +1,5 @@
 .c-home {
-    grid-column: m;
+    grid-area: m;
     margin-inline: $spacer * 0.5;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -7,7 +7,7 @@
                     "s s s s s s s s s s s s"
                     "m m m m m m m m m m m m";
     &__aside {
-        grid-column: s;
+        grid-area: s;
         display: flex;
         flex-direction: column;
         background-color: $lightest;
@@ -20,7 +20,7 @@
         block-size: 500px;
     }
     &__main {
-        grid-column: m;
+        grid-area: m;
         background-color: $lightest;
         display: flex;
         flex-direction: column;
@@ -53,6 +53,33 @@
     }
     &__card-btn:hover {
         background-color: $primary;
+    }
+    &__cost {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 0.7;
+    }
+    &__cost-currency {
+        font-size: $spacer * 2;
+    }
+    &__cost-dollars {
+        font-size: $spacer * 4;
+    }
+    &__cost-cents {
+        font-size: $spacer * 1.5;
+        align-self: flex-start;
+    }
+    &__cta-button {
+        display: inline-block;
+        background-color: $primary;
+        color: $white;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+    }
+    &__pricing {
+        background-color: $white;
+        block-size: 23rem;
     }
 }
 

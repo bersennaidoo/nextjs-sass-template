@@ -1,7 +1,7 @@
 .c-header {
   margin-inline: $spacer * 0.5;
   background-color: $lightest;
-  grid-column: h;
+  grid-area: h;
   display: grid;
   gap: $spacer * 0.5;
   grid-template-columns: repeat(12, 1fr);
@@ -10,7 +10,7 @@
     "n n n n n n n n n n n n"
     "he he he he he he he he he he he he";
   &__logo-frame {
-    grid-column: l;
+    grid-area: l;
     text-align: center;
     padding: $spacer;
   }
@@ -22,10 +22,10 @@
     padding: $spacer * 1.5;
   }
   &__nav {
-    grid-column: n;
+    grid-area: n;
   }
   &__hero-frame {
-    grid-column: he;
+    grid-area: he;
   }
   &__list {
     display: flex;
@@ -55,6 +55,7 @@
   &__btn-dropdown {
     background-color: $primary;
     color: $white;
+    margin-inline-start: $spacer * 0.5;
   }
   &__list-frame {
     display: none;
@@ -69,7 +70,7 @@
     background-size: cover;
   }
   &__hero-text {
-    color: $primary;
+    color: silver;
     font-style: italic;
     text-align: center;
     font-size: $spacer * 3;

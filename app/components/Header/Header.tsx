@@ -79,7 +79,7 @@ const Header = () => {
         </div>
       </nav>
       <div className="c-header__hero-frame">
-        <p className="c-header__hero-text">Laptops... Tech Gadgets for you...</p>
+        <p className="c-header__hero-text">WISHIING YOU A Magical... FESTIVE SEASON...</p>
       </div>
     </div>
   );
