@@ -15,7 +15,12 @@
         margin-block-start: 0;
     }
     &__mail-link {
+        display: inline-block;
+        padding: $spacer * 0.5;
         text-decoration: none;
-        color: silver;
+        color: wheat;
+    }
+    &__mail-link:hover {
+        background-color: $dark;
     }
 }

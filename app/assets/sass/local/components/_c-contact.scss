@@ -52,6 +52,9 @@
         font-size: $spacer;
         border-radius: $spacer * 0.6;
     }
+    &__form-submit-btn:hover {
+        background-color: $primary;
+    }
 }
 
 @media (min-width: $breakpoint-min-width-md ) {

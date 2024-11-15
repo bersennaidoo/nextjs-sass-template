@@ -3,8 +3,10 @@ $darkest: shade-color(#20c997, 100%);
 $dark: shade-color(#20c997, 60%);
 $medium: tint-color(#20c997, 80%);
 $light: tint-color(#20c997, 89%); 
-$lightest: tint-color(#20c997, 95%);
+/*$lightest: tint-color(#20c997, 95%);*/
 $white: tint-color(#20c997, 100%);
+
+$lightest: tint-color(gold, 90%);
 
 $warning: yellow;
 $danger: red;
