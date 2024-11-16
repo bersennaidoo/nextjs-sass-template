@@ -1,12 +1,11 @@
-$primary: #20c997;
-$darkest: shade-color(#20c997, 100%);
-$dark: shade-color(#20c997, 60%);
-$medium: tint-color(#20c997, 80%);
-$light: tint-color(#20c997, 89%); 
-/*$lightest: tint-color(#20c997, 95%);*/
-$white: tint-color(#20c997, 100%);
+$primary: #d2691e;
+$darkest: shade-color(#d2691e, 100%);
+$dark: shade-color(#d2691e, 60%);
+$medium: tint-color(#d2691e, 80%);
+$light: tint-color(#d2691e, 89%); 
+$lightest: tint-color(#d2691e, 95%);
+$white: tint-color(#d2691e, 100%);
 
-$lightest: tint-color(gold, 90%);
 
 $warning: yellow;
 $danger: red;

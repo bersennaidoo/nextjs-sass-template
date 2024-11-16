@@ -21,70 +21,70 @@ const CContact: FC<TCContactProps> = (props: TCContactProps) => {
       <main className="c-contact__main">
         <div className="c-contact__form-frame">
           <h2 className="c-contact__form-header">
-            Complete the form below to begin your free shopping trial
+            Complete the form below to ask a question
           </h2>
-          <form className="c-contact__form">
-            <fieldset className="c-contact__form-fieldset">
-              <legend className="c-contact__form-legend">
-                Customer Information
-              </legend>
-              <label className="c-contact__form-label" htmlFor="fName">
-                First Name:
-              </label>
+            <form className="c-contact__form">
+              <fieldset className="c-contact__form-fieldset">
+                <legend className="c-contact__form-legend">
+                  Customer Information
+                </legend>
+                <label className="c-contact__form-label" htmlFor="fName">
+                  First Name:
+                </label>
+                <input
+                  className="c-contact__form-text"
+                  type="text"
+                  id="fName"
+                  name="fName"
+                  required
+                />
+                <label className="c-contact__form-label" htmlFor="lName">
+                  Last Name:
+                </label>
+                <input
+                  className="c-contact__form-text"
+                  type="text"
+                  id="lName"
+                  name="lName"
+                  required
+                />
+                <label className="c-contact__form-label" htmlFor="email">
+                  Email:
+                </label>
+                <input
+                  className="c-contact__form-email"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
+                <label className="c-contact__form-label" htmlFor="phone">
+                  Phone:
+                </label>
+                <input
+                  className="c-contact__form-tel"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                />
+                <label className="c-contact__form-label" htmlFor="question">
+                  Question:
+                </label>
+                <textarea
+                  className="c-contact__form-textarea"
+                  rows={5}
+                  cols={65}
+                  id="question"
+                  name="question"
+                ></textarea>
+              </fieldset>
               <input
-                className="c-contact__form-text"
-                type="text"
-                id="fName"
-                name="fName"
-                required
+                className="c-contact__form-submit-btn"
+                type="submit"
+                id="submit"
               />
-              <label className="c-contact__form-label" htmlFor="lName">
-                Last Name:
-              </label>
-              <input
-                className="c-contact__form-text"
-                type="text"
-                id="lName"
-                name="lName"
-                required
-              />
-              <label className="c-contact__form-label" htmlFor="email">
-                Email:
-              </label>
-              <input
-                className="c-contact__form-email"
-                type="email"
-                id="email"
-                name="email"
-                required
-              />
-              <label className="c-contact__form-label" htmlFor="phone">
-                Phone:
-              </label>
-              <input
-                className="c-contact__form-tel"
-                type="tel"
-                id="phone"
-                name="phone"
-                required
-              />
-              <label className="c-contact__form-label" htmlFor="question">
-                Question:
-              </label>
-              <textarea
-                className="c-contact__form-textarea"
-                rows={5}
-                cols={65}
-                id="question"
-                name="question"
-              ></textarea>
-            </fieldset>
-            <input
-              className="c-contact__form-submit-btn"
-              type="submit"
-              id="submit"
-            />
-          </form>
+            </form>
         </div>
       </main>
     </div>

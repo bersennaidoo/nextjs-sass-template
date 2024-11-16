@@ -45,7 +45,7 @@
     color: $white;
   }
   &__list-link:hover {
-    background-color: #20c99777;
+    background-color: #d2691e77;
   }
   &__form-control {
     padding: $spacer * 0.5;
@@ -58,16 +58,18 @@
     border-radius: $spacer * 0.6;
   }
   &__search-form-btn:hover {
-    background-color: #20c99777;
+    background-color: #d2691e77;
   }
   &__btn-dropdown {
     background-color: $primary;
+    position: relative;
+    bottom: 90px;
     border-radius: $spacer * 0.6;
     color: $white;
     margin-inline-start: $spacer * 0.5;
   }
   &__btn-dropdown:hover {
-    background-color: #20c99777;
+    background-color: #d2691e77;
   }
   &__list-frame {
     display: none;

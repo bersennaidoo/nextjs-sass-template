@@ -1,25 +1,113 @@
 .c-about {
     grid-area: m;
     margin-inline: $spacer * 0.5;
-    background-color: wheat;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    gap: $spacer;
     grid-template-areas: 
-                    "s s s s s s s s s s s s"
-                    "m m m m m m m m m m m m";
-    &__aside {
-        grid-area: s;
-        background-color: khaki;
+                    "s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1"
+                    "s2 s2 s2 s2 s2 s2 s2 s2 s2 s2 s2 s2"
+                    "s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3 s3"
+                    "s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4 s4"
+                    "s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5 s5";
+    &__section1 {
+        grid-area: s1;
+        background-color: $lightest;
+        padding: $spacer;
     }
-    &__main {
-        grid-area: m;
-        background-color: tomato;
+    &__heading-frame {
+        padding-inline: $spacer;
+    }
+    &__columns2 {
+        columns: 1;
+        padding-inline: $spacer;
+        margin-block-start: -10px;
+    }
+    &__section2 {
+        grid-area: s2;
+        background-color: $lightest;
+        padding-inline: $spacer;
+    }
+    &__section2-img-frame {
+        padding: $spacer;
+    }
+    &__section2-img {
+        max-inline-size: 100%;
+    }
+    &__section3 {
+        grid-area: s3;
+        background-color: $lightest;
+        padding-inline: $spacer;
+        margin-block-end: $spacer * -2.19;
+    }
+    &__section3-img-frame {
+        padding: $spacer;
+    }
+    &__section3-img {
+        max-inline-size: 100%;
+    }
+    &__section2-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "iimg iimg iimg iimg iimg iimg"
+        "iic1 iic1 iic1 iic1 iic1 iic1"
+        "iic2 iic2 iic2 iic2 iic2 iic2"
+        "iic3 iic3 iic3 iic3 iic3 iic3";
+    }
+    &__section2-item-img {
+        grid-area: iimg;
+    }
+    &__section2-item-icons1 {
+        grid-area: iic1;
+    }
+    &__section2-item-icons2 {
+        grid-area: iic2;
+    }
+    &__section2-item-icons3 {
+        grid-area: iic3;
+    }
+    &__section3-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "iimg iimg iimg iimg iimg iimg"
+        "iic1 iic1 iic1 iic1 iic1 iic1"
+        "iic2 iic2 iic2 iic2 iic2 iic2"
+        "iic3 iic3 iic3 iic3 iic3 iic3";
+    }
+    &__section3-item-img {
+        grid-area: iimg;
+    }
+    &__section3-item-icons1 {
+        grid-area: iic1;
+    }
+    &__section3-item-icons2 {
+        grid-area: iic2;
+    }
+    &__section3-item-icons3 {
+        grid-area: iic3;
     }
 }
 
 @media (min-width: $breakpoint-min-width-md ) {
     .c-about {
-        grid-template-areas: 
-                      "s s s s m m m m m m m m";
+        &__columns2 {
+            columns: 2;
+        }
+        &__section2-grid {
+            grid-template-areas: 
+            "iic1 iic1 iic1 iimg iimg iimg"
+            "iic1 iic1 iic1 iimg iimg iimg"
+            "iic2 iic2 iic2 iimg iimg iimg"
+            "iic3 iic3 iic3 iimg iimg iimg";
+        }
+        &__section3-grid {
+            grid-template-areas: 
+            "iimg iimg iimg iic1 iic1 iic1"
+            "iimg iimg iimg iic1 iic1 iic1"
+            "iimg iimg iimg iic2 iic2 iic2"
+            "iimg iimg iimg iic3 iic3 iic3";
+        }
     }
 }
