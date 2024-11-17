@@ -1,4 +1,6 @@
 .c-sidebar {
     grid-area: sb;
-    background-color: indianred;
+    display: flex;
+    flex-direction: column;
+    gap: $spacer * 0.3;
 }

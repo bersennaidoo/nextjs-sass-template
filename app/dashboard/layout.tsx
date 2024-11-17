@@ -1,4 +1,5 @@
 import CSideBar from "@/app/components/c-sidebar/c-sidebar"
+import Cta from "@/app/components/cta/cta"
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     return (
         <div className="c-dashboard-layout">
             <CSideBar />
+            <Cta />
             {children}
         </div>
     );

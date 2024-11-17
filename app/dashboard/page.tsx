@@ -4,7 +4,6 @@ const Dashboard = () => {
     return (
         <div className="c-dashboard">
             Dashboard
-     
         </div>
     )
 }

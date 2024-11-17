@@ -1,10 +1,21 @@
 .c-dashboard-layout {
     grid-area: m;
+    margin-inline: $spacer * 0.5;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas: 
     "sb sb sb sb sb sb sb sb sb sb sb sb"
+    "cta cta cta cta cta cta cta cta cta cta cta cta"
     "dm dm dm dm dm dm dm dm dm dm dm dm";
     gap: $spacer * 0.3;
-    background-color: saddlebrown;
+    background-color: $lightest;
 }
+
+@media (min-width: $breakpoint-min-width-md) {
+    .c-dashboard-layout {
+        grid-template-areas: 
+        "sb sb sb sb cta cta cta cta cta cta cta cta"
+        "dm dm dm dm dm dm dm dm dm dm dm dm";
+    }
+}
+
