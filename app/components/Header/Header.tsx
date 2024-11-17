@@ -54,6 +54,12 @@ const Header = () => {
                 Shop
               </a>
             </li>
+             <li className="c-header__list-item">
+              <a className="c-header__list-link" href="/dashboard">
+                Dashboard
+              </a>
+            </li>
+
             <li className="c-header__list-item">
               <a className="c-header__list-link" href="/about">
                 About
@@ -64,7 +70,7 @@ const Header = () => {
                 Contact
               </a>
             </li>
-            <form className="c-header__search-form">
+            {/*<form className="c-header__search-form">
               <input
                 className="c-header__form-control"
                 type="search"
@@ -74,12 +80,12 @@ const Header = () => {
               <button className="c-header__search-form-btn" type="submit">
                 Search
               </button>
-            </form>
+  </form>*/}
           </ul>
         </div>
       </nav>
       <div className="c-header__hero-frame">
-        <p className="c-header__hero-text">WISHIING YOU A Magical... FESTIVE SEASON...</p>
+        <p className="c-header__hero-text">WISHING YOU A Magical... FESTIVE SEASON...</p>
       </div>
     </div>
   );

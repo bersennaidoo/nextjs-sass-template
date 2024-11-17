@@ -1,0 +1,10 @@
+.c-dashboard-layout {
+    grid-area: m;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    "sb sb sb sb sb sb sb sb sb sb sb sb"
+    "dm dm dm dm dm dm dm dm dm dm dm dm";
+    gap: $spacer * 0.3;
+    background-color: saddlebrown;
+}

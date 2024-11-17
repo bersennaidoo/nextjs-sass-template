@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState, FC } from "react";
+import Image from "next/image"
 
 type TCHomeProps = {};
 
@@ -11,7 +12,7 @@ const CHome: FC<TCHomeProps> = (props: TCHomeProps) => {
     <div className="c-home v-spacer">
       <aside className="c-home__aside">
         <div className="c-home__specials-frame">
-          <img className="c-home__specials" src="/images/viral.svg" />
+          <Image className="c-home__specials" src="/images/viral.svg" width={500} height={500} alt="specials" />
         </div>
       </aside>
       <main className="c-home__main">

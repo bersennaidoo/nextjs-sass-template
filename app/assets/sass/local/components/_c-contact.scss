@@ -31,7 +31,7 @@
     margin-block-start: 2%;
     background-color: $white;
     padding: 2%;
-    inline-size: 80%;
+    inline-size: 100%;
   }
   &__form-fieldset,
   input,
@@ -104,5 +104,8 @@
 @media (min-width: $breakpoint-min-width-md) {
   .c-contact {
     grid-template-areas: "s s s s m m m m m m m m";
+    &__form {
+      inline-size: 90%;
+    }
   }
 }
