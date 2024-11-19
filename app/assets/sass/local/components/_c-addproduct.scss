@@ -1,0 +1,95 @@
+.c-addproduct {
+  grid-area: m;
+  margin-inline: $spacer * 0.5;
+  display: grid;
+  gap: $spacer;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: ". . apm apm apm apm apm apm apm apm . .";
+  &__main {
+    grid-area: apm;
+  }
+  &__form-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacer * 0.1;
+    background-color: $lightest;
+    padding: $spacer;
+  }
+  &__form {
+    margin-block-start: 2%;
+    background-color: $white;
+    padding: 2%;
+    inline-size: 100%;
+  }
+  &__form-fieldset, input {
+    margin-block-end: 2%;
+    inline-size: 100%;
+  }
+  &__form-fieldset {
+    border-right: 1px solid $primary;
+    border-left: 1px solid $primary;
+    border-bottom: 1px solid $primary;
+    box-shadow: inset ($spacer * 0.1) ($spacer * 0.02) $primary;
+  }
+  &__form-legend {
+    font-weight: bold;
+    font-size: $spacer * 1.25;
+  }
+  &__form-label {
+    display: block;
+    padding-block-start: 2%;
+  }
+  &__form-submit-btn {
+    margin: 0 auto;
+    border: 1px solid $primary;
+    display: inline-block;
+    padding: 2%;
+    background-color: $white;
+    font-size: $spacer;
+    border-radius: $spacer * 0.6;
+    box-shadow: inset ($spacer * 0.1) ($spacer * 0.1) ($spacer * 0.1)
+      ($spacer * 0.02) $primary;
+  }
+  &__form-submit-btn:hover {
+    background-color: $primary;
+  }
+  &__form-text {
+    display: inline-block;
+    block-size: $spacer * 2;
+    border: $spacer * 0.1 solid gray;
+    border-radius: 10px;
+    box-shadow: inset ($spacer * 0.1) ($spacer * 0.1) ($spacer * 0.1)
+      ($spacer * 0.02) $primary;
+  }
+  &__form-url {
+    display: inline-block;
+    block-size: $spacer * 2;
+    border: $spacer * 0.1 solid gray;
+    border-radius: 10px;
+    box-shadow: inset ($spacer * 0.1) ($spacer * 0.1) ($spacer * 0.1)
+      ($spacer * 0.02) $primary;
+  }
+  &__form-number {
+    display: inline-block;
+    block-size: $spacer * 2;
+    border: $spacer * 0.1 solid gray;
+    border-radius: 10px;
+    box-shadow: inset ($spacer * 0.1) ($spacer * 0.1) ($spacer * 0.1)
+      ($spacer * 0.02) $primary;
+  }
+  &__info {
+    margin-inline-start: $spacer * 0.7;
+    color: silver;
+  }
+}
+
+@media (min-width: $breakpoint-min-width-md) {
+    .c-addproduct {
+      grid-template-areas: ". . apm apm apm apm apm apm apm apm . .";
+      &__form {
+        inline-size: 90%;
+      }
+    }
+  }
+

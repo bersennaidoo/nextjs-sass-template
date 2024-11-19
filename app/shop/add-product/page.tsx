@@ -1,61 +1,96 @@
-import { prisma } from "@/app/domain/foundation/db/prisma"
+import { prisma } from "@/app/domain/foundation/db/prisma";
 import { redirect } from "next/navigation";
 
+export const metadata = {
+  title: "Add Product - XYZ Shop",
+};
+
 async function addProduct(formData: FormData) {
-    "use server";
-  
-    const name = formData.get("name")?.toString();
-    const description = formData.get("description")?.toString();
-    const imageUrl = formData.get("imageUrl")?.toString();
-    const price = Number(formData.get("price") || 0);
-  
-    if (!name || !description || !imageUrl || !price) {
-      throw Error("Missing required fields");
-    }
-  
-    await prisma.product.create({
-      data: { name, description, imageUrl, price },
-    });
-  
-    redirect("/shop");
+  "use server";
+
+  const name = formData.get("name")?.toString();
+  const description = formData.get("description")?.toString();
+  const imageUrl = formData.get("imageUrl")?.toString();
+  const price = Number(formData.get("price") || 0);
+
+  if (!name || !description || !imageUrl || !price) {
+    throw Error("Missing required fields");
   }
 
-const AddProductPage = () => {
+  await prisma.product.create({
+    data: { name, description, imageUrl, price },
+  });
 
-    return (
-        <div className="c-addproduct">
-      <h1 className="c-addproduct__heading">Add Product</h1>
-      <form className="c-addproduct__form" action={addProduct}>
-        <input
-          required
-          name="name"
-          placeholder="Name"
-          className="c-addproduct__formcontrol-input"
-        />
-        <textarea
-          required
-          name="description"
-          placeholder="Description"
-          className="c-addproduct__formcontrol-textarea"
-        />
-        <input
-          required
-          name="imageUrl"
-          placeholder="Image URL"
-          type="url"
-          className="c-addproduct__formcontrol-input"
-        />
-        <input
-          required
-          name="price"
-          placeholder="Price"
-          type="number"
-          className="c-addproduct__formcontrol-input"
-        />
-        <button className="c-addproduct__btn">Add Product</button>
-      </form>
-    </div>
-    )
+  redirect("/shop");
 }
 
-export default AddProductPage
+const AddProductPage = () => {
+  return (
+    <div className="c-addproduct">
+      <main className="c-addproduct__main">
+        <div className="c-addproduct__form-frame">
+          <h2 className="c-addproduct__form-header">
+            Complete the form below to add a product
+          </h2>
+          <form className="c-addproduct__form" action={addProduct}>
+            <fieldset className="c-addproduct__form-fieldset">
+              <legend className="c-addproduct__form-legend">
+                Product Information
+              </legend>
+              <label className="c-addproduct__form-label" htmlFor="pName">
+                Product Name:
+              </label>
+              <input
+                className="c-addproduct__form-text"
+                type="text"
+                id="pName"
+                name="pName"
+                required
+              />
+              <label className="c-addproduct__form-label" htmlFor="dName">
+                Description:
+              </label>
+              <input
+                className="c-addproduct__form-text"
+                type="text"
+                id="dName"
+                name="dName"
+                required
+              />
+              <label className="c-addproduct__form-label" htmlFor="url">
+                ImageUrl:
+              </label>
+              <input
+                className="c-addproduct__form-url"
+                type="url"
+                id="url"
+                name="url"
+                required
+              />
+              <label className="c-addproduct__form-label" htmlFor="price">
+                Price:
+              </label>
+              <input
+                className="c-addproduct__form-number"
+                type="number"
+                id="price"
+                name="price"
+                required
+              />
+            </fieldset>
+            <button
+              className="c-addproduct__form-submit-btn"
+              type="submit"
+              id="submit"
+            >
+              Add Product
+            </button>
+            <span className="c-addproduct__info">We'll never share your information</span> 
+          </form>
+        </div>
+      </main>
+    </div>
+  );
+};
+
+export default AddProductPage;

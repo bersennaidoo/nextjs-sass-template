@@ -23,68 +23,68 @@ const CContact: FC<TCContactProps> = (props: TCContactProps) => {
           <h2 className="c-contact__form-header">
             Complete the form below to ask a question
           </h2>
-            <form className="c-contact__form">
-              <fieldset className="c-contact__form-fieldset">
-                <legend className="c-contact__form-legend">
-                  Customer Information
-                </legend>
-                <label className="c-contact__form-label" htmlFor="fName">
-                  First Name:
-                </label>
-                <input
-                  className="c-contact__form-text"
-                  type="text"
-                  id="fName"
-                  name="fName"
-                  required
-                />
-                <label className="c-contact__form-label" htmlFor="lName">
-                  Last Name:
-                </label>
-                <input
-                  className="c-contact__form-text"
-                  type="text"
-                  id="lName"
-                  name="lName"
-                  required
-                />
-                <label className="c-contact__form-label" htmlFor="email">
-                  Email:
-                </label>
-                <input
-                  className="c-contact__form-email"
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                />
-                <label className="c-contact__form-label" htmlFor="phone">
-                  Phone:
-                </label>
-                <input
-                  className="c-contact__form-tel"
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  required
-                />
-                <label className="c-contact__form-label" htmlFor="question">
-                  Question:
-                </label>
-                <textarea
-                  className="c-contact__form-textarea"
-                  rows={5}
-                  cols={65}
-                  id="question"
-                  name="question"
-                ></textarea>
-              </fieldset>
+          <form className="c-contact__form">
+            <fieldset className="c-contact__form-fieldset">
+              <legend className="c-contact__form-legend">
+                Customer Information
+              </legend>
+              <label className="c-contact__form-label" htmlFor="fName">
+                First Name:
+              </label>
               <input
-                className="c-contact__form-submit-btn"
-                type="submit"
-                id="submit"
+                className="c-contact__form-text"
+                type="text"
+                id="fName"
+                name="fName"
+                required
               />
-            </form>
+              <label className="c-contact__form-label" htmlFor="lName">
+                Last Name:
+              </label>
+              <input
+                className="c-contact__form-text"
+                type="text"
+                id="lName"
+                name="lName"
+                required
+              />
+              <label className="c-contact__form-label" htmlFor="email">
+                Email:
+              </label>
+              <input
+                className="c-contact__form-email"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+              <label className="c-contact__form-label" htmlFor="phone">
+                Phone:
+              </label>
+              <input
+                className="c-contact__form-tel"
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+              />
+              <label className="c-contact__form-label" htmlFor="question">
+                Question:
+              </label>
+              <textarea
+                className="c-contact__form-textarea"
+                rows={5}
+                cols={65}
+                id="question"
+                name="question"
+              ></textarea>
+            </fieldset>
+            <input
+              className="c-contact__form-submit-btn"
+              type="submit"
+              id="submit"
+            />
+          </form>
         </div>
       </main>
     </div>

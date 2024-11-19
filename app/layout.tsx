@@ -8,7 +8,7 @@ import Footer from "@/app/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "XYZ Company",
-  description: "XYZ company site",
+  description: "XYZ Shop Site",
 };
 
 const DynamicHeaderWithNoSSR = dynamic(
