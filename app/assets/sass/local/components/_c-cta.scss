@@ -1,4 +1,22 @@
 .c-cta {
-    grid-area: cta;
-    background-color: yellow;
+  grid-area: cta;
+  background-color: yellow;
+  &__btn {
+    position: relative;
+    padding-inline: $spacer;
+    padding-block: $spacer * 0.5;
+    background-color: $white;
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: $breakpoint-min-width-md) {
+  .c-cta {
+    &__btn {
+      top: 6.25rem;
+      left: 18.75rem;
+    }
+  }
 }
