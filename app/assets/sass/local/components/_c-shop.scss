@@ -4,6 +4,7 @@
     background-color: $lightest;
     &__hero-frame {
         display: grid;
+        margin-inline: $spacer * 0.5;
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas: 
         "hero hero hero hero hero hero"
@@ -12,7 +13,6 @@
     }
     &__hero-content {
         grid-area: hero;
-        background-color: blue;
     }
     &__hero-img {
         max-inline-size: 100%;
@@ -22,14 +22,15 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        gap: $spacer * 0.1;
+        gap: $spacer * 0.6;
+        margin: $spacer * 0.5;
     }
     &__product-card {
         flex: 1 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 1px solid $darkest;
+        background-color: $white;
     }
     &__product-card-link {
         display: inline-block;
