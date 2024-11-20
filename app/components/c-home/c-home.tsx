@@ -24,8 +24,8 @@ const CHome: FC<TCHomeProps> = (props: TCHomeProps) => {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam modi
               illum et.
             </p>
-            <a href="#" className="c-home__card-btn">
-              Go somewhere
+            <a href="/shop" className="c-home__card-btn">
+              Shop
             </a>
           </div>
         </div>
@@ -38,7 +38,7 @@ const CHome: FC<TCHomeProps> = (props: TCHomeProps) => {
               illum et.
             </p>
             <a href="#" className="c-home__card-btn">
-              Go somewhere
+             Shop 
             </a>
           </div>
         </div>
@@ -51,7 +51,7 @@ const CHome: FC<TCHomeProps> = (props: TCHomeProps) => {
               illum et.
             </p>
             <a href="#" className="c-home__card-btn">
-              Go somewhere
+              Shop
             </a>
           </div>
         </div>

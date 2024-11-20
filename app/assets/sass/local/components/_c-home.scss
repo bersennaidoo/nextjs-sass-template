@@ -44,7 +44,9 @@
     }
     &__card-btn {
         display: inline-block;
+        inline-size: 100%;
         padding: $spacer * 0.8;
+        padding-inline-start: $spacer * 5;
         margin-block-end: $spacer * 0.3;
         border: 1px solid $primary;
         border-radius: 6px;

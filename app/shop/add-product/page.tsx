@@ -62,7 +62,7 @@ const AddProductPage = () => {
               </label>
               <input
                 className="c-addproduct__form-url"
-                type="url"
+                type="text"
                 id="url"
                 name="url"
                 required

@@ -4,7 +4,7 @@
   display: grid;
   gap: $spacer;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-areas: ". . apm apm apm apm apm apm apm apm . .";
+  grid-template-areas: "apm apm apm apm apm apm apm apm apm apm apm apm";
   &__main {
     grid-area: apm;
   }
@@ -86,7 +86,6 @@
 
 @media (min-width: $breakpoint-min-width-md) {
     .c-addproduct {
-      grid-template-areas: ". . apm apm apm apm apm apm apm apm . .";
       &__form {
         inline-size: 90%;
       }

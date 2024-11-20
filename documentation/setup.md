@@ -28,10 +28,10 @@ price "000" int
 
 ### Prisma
 
-npx prisma init
+npx prisma init // creates prisma config
 
-npx prisma db pull
-npx prisma db push
+npx prisma db pull // pull and parse schema
+npx prisma db push // push model
 
 
 npx prisma generate // prisma client
