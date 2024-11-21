@@ -28,9 +28,9 @@ export default function CProductCard({ product }: ProductCardProps) {
       </Link>
       <div className="c-shop__product-card-body">
         <h2 className="c-shop__product-card-title">{product.name}</h2>
-        {isNew && <div className="badge badge-secondary">NEW</div>}
+        {isNew && <div className="c-shop__product-card-badge">NEW</div>}
         <p>{product.description}</p>
-        <CPriceTag price={product.price} />
+        <CPriceTag price={product.price} className="c-shop__product-card-pricetag" />
       </div>
     </div> 
   );

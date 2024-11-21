@@ -1,0 +1,24 @@
+.c-product-detail {
+    grid-area: m;
+    margin-inline: $spacer * 0.5;
+    &__frame {
+        display: flex;
+        align-items: center;
+        margin-inline: auto;
+        flex-direction: column;
+        gap: $spacer;
+        inline-size: 60%;
+        background-color: $lightest;
+    }
+    &__img {
+        max-inline-size: 100%;
+    }
+}
+
+@media (min-width: $breakpoint-min-width-md ) {
+    .c-product-detail {
+        &__frame {
+            flex-direction: row;
+        }
+    }
+}

@@ -1,7 +1,6 @@
 .c-shop {
     grid-area: m;
     margin-inline: $spacer * 0.5;
-    background-color: $lightest;
     &__hero-frame {
         display: grid;
         margin-inline: $spacer * 0.5;
@@ -10,9 +9,11 @@
         "hero hero hero hero hero hero"
         "card card card card card card";
         gap: $spacer * 0.5;
+        background-color: $white;
     }
     &__hero-content {
         grid-area: hero;
+        margin-inline: $spacer;
     }
     &__hero-img {
         max-inline-size: 100%;
